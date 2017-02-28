@@ -1,0 +1,36 @@
+$cyan-aqua: #00CCFF;
+$puerto-rico: #37C8AB;
+$blue-ribbon: #0066FF;
+$white: #fff;
+$black: #000;
+$text-light: rgba(255,255,255,0.84);
+$text-dark: rgba(0,0,0,0.75);
+
+.color-bar {
+    background: linear-gradient(90deg, #FF4A4A, #D9D975, #0F800F, #5F5FFF, #803880);
+    content: '';
+    height: 1px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    &::after {
+        background: linear-gradient(90deg, #FF4A4A, #D9D975, #0F800F, #5F5FFF, #803880);
+        content: '';
+        filter: blur(5px);
+        height: 3px;
+        opacity: .7;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.large-icon {
+    font-size: 64px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}

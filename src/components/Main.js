@@ -2,6 +2,7 @@ require('normalize.css/normalize.css');
 require('styles/App.scss');
 
 import React from 'react';
+
 //import Contact from './Contact';
 import Home from './Home';
 // import Portfolio from './Portfolio';
