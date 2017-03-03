@@ -1,39 +1,24 @@
-require('normalize.css/normalize.css');
-require('styles/App.scss');
-
 import React from 'react';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
-//import Contact from './Contact';
-import Home from './Home';
-// import Portfolio from './Portfolio';
+import Home from './Views/Home';
+import Portfolio from './Views/Portfolio';
+import Contact from './Views/Contact';
+import Layout from './Shared/Layout'
 
-
-let logoImg = require('../images/logo.png');
-
-class AppComponent extends React.Component {
+class AppRouter extends React.Component {
   render() {
     return (
-      <div className="index">
-        <img src={logoImg} alt="JByrd Designs" className='site-logo'/>
-        <nav>
-          <ul>
-            <li><a href='#' >Home</a></li>
-            <li><a href='#' >Portfolio</a></li>
-            <li><a href='#' >Contact</a></li>
-          </ul>
-        </nav>
-        <div className="content-container">
-          <Home />
-        </div>
-        <footer>
-          <p>&copy; Jonathan Byrd 2017</p>
-        </footer>
-      </div>
+      <Router history={hashHistory}>
+        <Route path="/" component={Layout}>
+          <IndexRoute component={Home}/>
+          <Route path="Home" name="Home" component={Home}/>
+          <Route path="Portfolio" name="Portfolio" component={Portfolio}/>
+          <Route path="Contact" name ="Contact" component={Contact}/>
+        </Route>
+      </Router>
     );
   }
 }
 
-AppComponent.defaultProps = {
-};
-
-export default AppComponent;
+export default AppRouter;

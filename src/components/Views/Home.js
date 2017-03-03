@@ -1,5 +1,4 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
 
 class HomeComponent extends React.Component {
   render() {
@@ -31,18 +30,22 @@ class HomeComponent extends React.Component {
         <section className="technologies">
             <h1>Innovative Technologies</h1>
             <div>
+              <i className="devicons devicons-html5 large-icon" aria-hidden="true"></i>
               <h2>HTML 5</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
             </div>
             <div>
+              <i className="devicons devicons-sass large-icon" aria-hidden="true"></i>
               <h2>Sass</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
             </div>
             <div>
-              <h2>React</h2>
+              <i className="devicons devicons-javascript_badge large-icon" aria-hidden="true"></i>
+              <h2>React JS</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
             </div>
             <div>
+              <i className="devicons devicons-dotnet large-icon" aria-hidden="true"></i>
               <h2>.NET Core</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Donec sollicitudin molestie malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
             </div>
