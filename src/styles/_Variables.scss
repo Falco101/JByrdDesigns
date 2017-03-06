@@ -5,8 +5,14 @@ $deep-cerulean: #08a;
 $blue-ribbon: #0066FF;
 $white: #fff;
 $black: #000;
-$text-light: rgba(255,255,255,0.84);
-$text-dark: rgba(0,0,0,0.75);
+$text-light: rgba(255, 255, 255, 0.84);
+$text-dark: rgba(0, 0, 0, 0.75);
+@mixin center($margin: 12px) {
+    position: relative;
+    margin: $margin auto $margin auto;
+}
+$glass: rgba($white, 0.1);
+$bg-glass: radial-gradient(at bottom, rgba(0, 136, 170, 0.7), rgba(25, 25, 25, 0.7)), linear-gradient( 45deg, transparent 10%, $glass 20%, transparent 20%, transparent 30%, $glass 30%, transparent 40%, transparent 46%, $glass 50%, transparent 50%, transparent 70%, $glass 75%, transparent 75%, $glass 90%, transparent 90%, $glass 95%, $glass 100%);
 
 .color-bar {
     background: linear-gradient(90deg, #FF4A4A, #D9D975, #0F800F, #5F5FFF, #803880);
@@ -17,7 +23,6 @@ $text-dark: rgba(0,0,0,0.75);
     top: 0;
     left: 0;
     z-index: 1;
-
     &::after {
         background: linear-gradient(90deg, #FF4A4A, #D9D975, #0F800F, #5F5FFF, #803880);
         content: '';

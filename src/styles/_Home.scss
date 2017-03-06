@@ -1,5 +1,5 @@
 @import 'Variables';
-$glass: rgba(255, 255, 255, 0.05);
+
 .site-content {
     // display: flex;
     header {
@@ -7,7 +7,7 @@ $glass: rgba(255, 255, 255, 0.05);
         max-width: 900px;
         margin: 0 auto 70px auto;
         background-color: rgba(5, 5, 5, 0.5);
-        background: radial-gradient(at bottom, rgba(0, 136, 170, 0.7), rgba(25, 25, 25, 0.7)), linear-gradient( 45deg, transparent 10%, $glass 20%, transparent 20%, transparent 30%, $glass 30%, transparent 40%, transparent 46%, $glass 50%, transparent 50%, transparent 70%, $glass 75%, transparent 75%, $glass 90%, transparent 90%, $glass 95%, $glass 100%);
+        background: $bg-glass;
         border-radius: 5px;
         padding: 14px;
         box-shadow: inset 0 0 0 1px rgba(lighten($cyan-aqua, 25%), 0.1), inset 0 1px 0 rgba(lighten($cyan-aqua, 25%), 0.15), 0 3px 10px rgba(0, 0, 0, 0.9);
