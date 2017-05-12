@@ -1,0 +1,44 @@
+@import 'Variables';
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script');
+
+.portfolio-content {
+    background: radial-gradient(circle at top, #666, #444);
+    // border: 1px solid #555;
+    border-top: 1px solid #616161;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh - 433px);
+    margin-bottom: 0;
+
+    .portfolio-title {
+        padding: 20px;
+
+        h1 {
+            text-align: center;
+
+        }
+
+    }
+
+    .portfolio-graphics, .portfolio-web {
+        margin-bottom: 0;
+        height: 100%;
+        padding: 10px;
+
+        h2 {
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+
+    .portfolio-graphics {
+        background: linear-gradient(45deg, $puerto-rico, $deep-cerulean);
+
+    }
+    .portfolio-web {
+        background: linear-gradient(45deg, $cyan-aqua, darken(desaturate($blue-ribbon, 50%), 14%));
+    }
+}
