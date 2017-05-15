@@ -4,7 +4,7 @@ require('styles/App.scss');
 import React from 'react';
 import { Link } from 'react-router'
 
-let logoImg = require('../../images/logo.png');
+let logoImg = require('../../images/logo.svg');
 
 class AppComponent extends React.Component {
   render() {

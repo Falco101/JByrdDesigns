@@ -23,12 +23,33 @@ class PortfolioComponent extends React.Component {
                 <div className='portfolio-graphics'>
                     <h2>Graphic Design</h2>
                     <div className='portfolio-description-container'>
-                        <img src=''></img>
-                        <p></p>
+                        <div><img src='/images/GraphicDesign.svg'></img></div>
+                        <div><p>Curabitur non nulla sit amet nisl tempus convallis
+                         quis ac lectus. Curabitur aliquet quam id dui posuere
+                          blandit. Pellentesque in ipsum id orci porta dapibus.
+                          Nulla porttitor accumsan tincidunt. Donec rutrum congue
+                         leo eget malesuada. Curabitur non nulla sit amet nisl
+                          tempus convallis quis ac lectus. Nulla porttitor accumsan
+                         tincidunt. Vivamus magna justo, lacinia eget consectetur
+                          sed, convallis at tellus. Mauris blandit aliquet elit,
+                         eget tincidunt nibh pulvinar a. Vivamus magna justo,
+                          lacinia eget consectetur sed, convallis at tellus.</p>
+                          </div>
                     </div>
                 </div>
                 <div className='portfolio-web'>
                     <h2>Web Design</h2>
+                    <div className='portfolio-description-container'>
+                        <div><p>Quisque velit nisi, pretium ut lacinia in, elementum
+                         id enim. Nulla porttitor accumsan tincidunt. Nulla
+                          porttitor accumsan tincidunt. Sed porttitor lectus nibh.
+                         Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                          amet dui. Praesent sapien massa, convallis a pellentesque
+                         nec, egestas non nisi. Mauris blandit aliquet elit, eget
+                          tincidunt nibh pulvinar a. Donec sollicitudin molestie
+                         malesuada. Pellentesque in ipsum id orci porta dapibus.</p></div>
+                    <div><img src='/images/WebDesign.svg' /></div>
+                    </div>
                 </div>
             </div>
         );
