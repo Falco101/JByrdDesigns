@@ -47,11 +47,11 @@
         }
     }
     .portfolio-graphics {
-        background: url('/images/drawing.svg') no-repeat left top, linear-gradient(45deg, $puerto-rico, $deep-cerulean);
+        background: url('../images/drawing.svg') no-repeat left top, linear-gradient(45deg, $puerto-rico, $deep-cerulean);
         min-height: 300px;
     }
     .portfolio-web {
-        background: url('/images/grid.svg') no-repeat right top, linear-gradient(45deg, $cyan-aqua, darken(desaturate($blue-ribbon, 50%), 14%));
+        background: url('../images/grid.svg') no-repeat right top, linear-gradient(45deg, $cyan-aqua, darken(desaturate($blue-ribbon, 50%), 14%));
         min-height: 300px;
     }
 }

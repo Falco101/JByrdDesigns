@@ -1,5 +1,8 @@
 import React from 'react';
 
+let graphicsImg = require('../../images/GraphicDesign.svg');
+let webImg = require('../../images/WebDesign.svg');
+
 class PortfolioComponent extends React.Component {
     constructor() {
         super();
@@ -23,7 +26,7 @@ class PortfolioComponent extends React.Component {
                 <div className='portfolio-graphics'>
                     <h2>Graphic Design</h2>
                     <div className='portfolio-description-container'>
-                        <div><img src='/images/GraphicDesign.svg'></img></div>
+                        <div><img src={graphicsImg}></img></div>
                         <div><p>Curabitur non nulla sit amet nisl tempus convallis
                          quis ac lectus. Curabitur aliquet quam id dui posuere
                           blandit. Pellentesque in ipsum id orci porta dapibus.
@@ -48,7 +51,7 @@ class PortfolioComponent extends React.Component {
                          nec, egestas non nisi. Mauris blandit aliquet elit, eget
                           tincidunt nibh pulvinar a. Donec sollicitudin molestie
                          malesuada. Pellentesque in ipsum id orci porta dapibus.</p></div>
-                    <div><img src='/images/WebDesign.svg' /></div>
+                    <div><img src={webImg} /></div>
                     </div>
                 </div>
             </div>
