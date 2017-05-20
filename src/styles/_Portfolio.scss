@@ -1,68 +1,58 @@
 @import 'Variables';
-@import url( 'https://fonts.googleapis.com/css?family=Aguafina+Script');
-
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script');
 .portfolio-content {
-  background: radial-gradient(circle at top, #666, #444);
-  border-bottom: 0;
-  border-radius: 5px 5px 0 0;
-  border-top: 1px solid #616161;
-  box-sizing: border-box;
-  height: 100%;
-  margin-bottom: 0;
-  min-height: calc(100vh - 433px);
-  overflow: hidden;
-  width: 100%;
-
-  .portfolio-title {
-    padding: 20px;
-
-    h1 {
-      text-align: center;
-    }
-  }
-
-  .portfolio-graphics,
-  .portfolio-web {
+    background: radial-gradient(circle at top, #666, #444);
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    border-top: 1px solid #616161;
+    box-sizing: border-box;
     height: 100%;
     margin-bottom: 0;
-    padding: 10px;
-
-    h2 {
-      font-weight: 300;
-      text-align: center;
-    }
-
-    .portfolio-description-container {
-      align-content: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      & div {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        top: 0;
-
-        & p {
-          width: 100%;
-          /* +1 to @RonM*/
-          position: absolute;
-          padding-top: 100%;
-          transform: translateY(-50%);
+    min-height: calc(100vh - 433px);
+    overflow: hidden;
+    width: 100%;
+    .portfolio-title {
+        padding: 20px;
+        h1 {
+            text-align: center;
         }
-      }
     }
-  }
-
-  .portfolio-graphics {
-    background: url('../images/drawing.svg') no-repeat left top, linear-gradient(45deg, $puerto-rico, $deep-cerulean);
-    min-height: 300px;
-  }
-
-  .portfolio-web {
-    background: url('../images/grid.svg') no-repeat right top, linear-gradient(45deg, $cyan-aqua, darken(desaturate($blue-ribbon, 50%), 14%));
-    min-height: 300px;
-  }
+    .portfolio-graphics,
+    .portfolio-web {
+        height: 100%;
+        margin-bottom: 0;
+        padding: 10px;
+        h2 {
+            font-weight: 300;
+            text-align: center;
+        }
+        .portfolio-description-container {
+            align-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            & div {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                top: 0;
+                & p {
+                    width: 100%;
+                    /* +1 to @RonM*/
+                    position: absolute;
+                    padding-top: 100%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    .portfolio-graphics {
+        background: url('../images/drawing.svg') no-repeat left top, linear-gradient(45deg, $puerto-rico, $deep-cerulean);
+        min-height: 300px;
+    }
+    .portfolio-web {
+        background: url('../images/grid.svg') no-repeat right top, linear-gradient(45deg, $cyan-aqua, darken(desaturate($blue-ribbon, 50%), 14%));
+        min-height: 300px;
+    }
 }
