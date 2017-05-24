@@ -17,7 +17,7 @@ class AppComponent extends React.Component {
               <Link to='Home' activeClassName='jbd-nav-button-active' className='jbd-nav-button'>Home</Link>
             </li>
             <li>
-              <Link to='Portfolio' activeClassName='jbd-nav-button-active' className='jbd-nav-button'>Portfolio</Link>
+              <Link to='Services' activeClassName='jbd-nav-button-active' className='jbd-nav-button'>Services</Link>
             </li>
             <li>
               <Link to='Contact' activeClassName='jbd-nav-button-active' className='jbd-nav-button'>Contact</Link>
